@@ -1,0 +1,54 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+
+# =========================
+# Model checkpoints and outputs
+# =========================
+**/outputs/
+analysis_outputs/
+runs/
+checkpoints/
+
+*.pt
+*.pth
+*.ckpt
+
+# =========================
+# Generated embeddings / arrays
+# =========================
+*.npy
+*.npz
+
+# =========================
+# Local datasets
+# =========================
+brisc2025/
+brisc_Dataset2025/
+datasets/
+
+# =========================
+# Large archives
+# =========================
+*.zip
+*.rar
+*.7z
+
+# =========================
+# Editor / OS / History
+# =========================
+.vscode/
+.idea/
+.history/
+.DS_Store
+Thumbs.db
+
+# Placeholder configuration files
+/configs/brats_ped_autoencoder.yaml
+/configs/brats_ped_unet.yaml

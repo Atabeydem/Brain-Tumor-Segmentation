@@ -1,0 +1,103 @@
+{
+  "protocol": "Frozen encoder. Healthy train uses saved image-level 80/20 split. Segmentation-train is split image-level 80/20. Hyperparameters and thresholds are selected on validation only. Dataset test is evaluated only after selection.",
+  "train_patch_counts": {
+    "n": 15320,
+    "positive": 6392,
+    "negative": 8928
+  },
+  "validation_patch_counts": {
+    "n": 3870,
+    "positive": 1598,
+    "negative": 2272
+  },
+  "final_test": {
+    "balanced": {
+      "config": {
+        "feature_kind": "raw_zscore",
+        "pca_dim": null,
+        "model": "logreg",
+        "C": 10.0,
+        "threshold": -0.10577173906313342
+      },
+      "validation_patch_metrics": {
+        "precision": 0.6706680584551148,
+        "sensitivity": 0.8041301627033792,
+        "specificity": 0.7222711267605634,
+        "f1": 0.7313602731929425,
+        "balanced_accuracy": 0.7632006447319712,
+        "auc": 0.8442689144881806
+      },
+      "validation_healthy_image_specificity": 0.897196261682243,
+      "test_patch_metrics": {
+        "tp": 1289,
+        "tn": 1422,
+        "fp": 641,
+        "fn": 395,
+        "precision": 0.6678756476683938,
+        "sensitivity": 0.7654394299287411,
+        "specificity": 0.6892874454677654,
+        "f1": 0.7133370226895408,
+        "balanced_accuracy": 0.7273634376982533,
+        "auc": 0.8176398322209083
+      },
+      "test_image_metrics": {
+        "n_images": 1000,
+        "tp": 816,
+        "tn": 129,
+        "fp": 11,
+        "fn": 44,
+        "precision": 0.9866989117291415,
+        "sensitivity": 0.9488372093023256,
+        "specificity": 0.9214285714285714,
+        "f1": 0.9673977474807351,
+        "balanced_accuracy": 0.9351328903654486,
+        "localized_tumor_images": 752,
+        "detected_only_from_mask_negative": 64
+      }
+    },
+    "high_sensitivity": {
+      "config": {
+        "feature_kind": "raw_zscore",
+        "pca_dim": null,
+        "model": "linear_svm",
+        "C": 1.0,
+        "threshold": 0.11172107065368093
+      },
+      "validation_patch_metrics": {
+        "precision": 0.7216367017978921,
+        "sensitivity": 0.7284105131414268,
+        "specificity": 0.8023767605633803,
+        "f1": 0.7250077857365307,
+        "balanced_accuracy": 0.7653936368524035,
+        "auc": 0.8437373301133458
+      },
+      "validation_healthy_image_specificity": 0.9252336448598131,
+      "test_patch_metrics": {
+        "tp": 1169,
+        "tn": 1595,
+        "fp": 468,
+        "fn": 515,
+        "precision": 0.7141111789859499,
+        "sensitivity": 0.6941805225653207,
+        "specificity": 0.7731459040232671,
+        "f1": 0.704004817825956,
+        "balanced_accuracy": 0.733663213294294,
+        "auc": 0.8159709069305014
+      },
+      "test_image_metrics": {
+        "n_images": 1000,
+        "tp": 785,
+        "tn": 129,
+        "fp": 11,
+        "fn": 75,
+        "precision": 0.9861809045226131,
+        "sensitivity": 0.9127906976744186,
+        "specificity": 0.9214285714285714,
+        "f1": 0.9480676328502415,
+        "balanced_accuracy": 0.917109634551495,
+        "localized_tumor_images": 701,
+        "detected_only_from_mask_negative": 84
+      }
+    }
+  }
+}
