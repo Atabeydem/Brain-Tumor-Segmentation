@@ -1,0 +1,23 @@
+{
+  "n_healthy_test_images": 140,
+  "n_images_with_internal_seam": 140,
+  "seam_half_band_px": 10,
+  "delta_definition": "symmetric minus fixed; negative MSE/jump means improvement",
+  "seam_jump_definition": "mean abs(error in reconstructed pixel jump across tile seam)",
+  "full512_only_n": 23,
+  "full512_only_mean_seam_jump_mae_fixed": 0.0010480298736618588,
+  "full512_only_mean_seam_jump_mae_symmetric": 0.0005056460213381797,
+  "full512_only_mean_seam_mse_fixed": 6.23599291076836e-07,
+  "full512_only_mean_seam_mse_symmetric": 3.6765126343506875e-07,
+  "whole_image_mean_psnr_db_fixed": 63.48579733279127,
+  "whole_image_mean_psnr_db_symmetric": 63.85977020581256,
+  "mean_seam_mse_fixed": 7.956534948444845e-07,
+  "mean_seam_mse_symmetric": 4.5353669764465767e-07,
+  "mean_interior_mse_fixed": 4.612414628653923e-07,
+  "mean_interior_mse_symmetric": 4.529367419467338e-07,
+  "mean_seam_jump_mae_fixed": 0.001195882639149204,
+  "mean_seam_jump_mae_symmetric": 0.0005630195764492132,
+  "mean_seam_mse_relative_change_pct": -42.99821460178413,
+  "mean_interior_mse_relative_change_pct": -1.800514825156152,
+  "mean_seam_jump_mae_relative_change_pct": -52.920164737087696
+}

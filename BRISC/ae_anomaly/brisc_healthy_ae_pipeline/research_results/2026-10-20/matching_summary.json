@@ -1,0 +1,45 @@
+{
+  "matched_geometry": "512x512 source, full 256x256 patch, exact row/col stratum",
+  "no_resize": true,
+  "frozen_encoder": true,
+  "tumor_source": "SEGMENTATION TRAIN",
+  "use_masknegative_control": false,
+  "classes": [
+    "Healthy train",
+    "Tumor-positive segtrain"
+  ],
+  "per_position": [
+    {
+      "position": "r0c0",
+      "sample_per_class": 130,
+      "healthy_available": 354,
+      "tumor_positive_available": 2339,
+      "tumor_source_negative_available": 1427
+    },
+    {
+      "position": "r0c1",
+      "sample_per_class": 130,
+      "healthy_available": 354,
+      "tumor_positive_available": 2231,
+      "tumor_source_negative_available": 1535
+    },
+    {
+      "position": "r1c0",
+      "sample_per_class": 130,
+      "healthy_available": 354,
+      "tumor_positive_available": 1639,
+      "tumor_source_negative_available": 2127
+    },
+    {
+      "position": "r1c1",
+      "sample_per_class": 130,
+      "healthy_available": 354,
+      "tumor_positive_available": 1548,
+      "tumor_source_negative_available": 2218
+    }
+  ],
+  "samples_total": 1040,
+  "seed": 42,
+  "projection_fit": "JOINT; LLE/tSNE PCA-50 preprojection",
+  "caution": "Geometry matching does not remove scanner/domain/site or patient-level confounds"
+}
